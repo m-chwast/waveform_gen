@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>wave_default.png</file>
+    </qresource>
+</RCC>

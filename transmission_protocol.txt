@@ -1,0 +1,17 @@
+LEGEND:
+->   ---- sent by PC
+=>   ---- sent by uC
+
+
+-> "wave\n"	//transmission start message, it sets uC to LOADING mode
+=> "LD\n"	//acknowledge start of transmission
+-> dac_divider, sample_no
+=> sample_no	+ '\n'
+-> samples[0], ..., samples[99]
+=> sum of previous samples [int32_t] + '\n'
+.
+.
+.
+-> samples[n-100], ..., samples[n-1]
+=> sum of previous 100 samples [int32_t] + '\n'
+=> "LDcplt\n"

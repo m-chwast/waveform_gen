@@ -83,6 +83,7 @@ private:
     std::list<wave> wave_list;
 
     wave * resultant_wave;
+    bool dont_draw;
 
     int dac_divider;
 

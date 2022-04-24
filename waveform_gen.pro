@@ -15,7 +15,11 @@ SOURCES += \
     serialib.cpp \
     wave.cpp \
     wave_data.cpp \
-    waveeditform.cpp
+    waveeditform.cpp \
+    waveeditform/drawing.cpp \
+    waveeditform/saves.cpp \
+    waveeditform/transmission.cpp \
+    waveeditform/wave_edit.cpp
 
 HEADERS += \
     mainwindow.h \
